@@ -1,16 +1,16 @@
-const parent = React.createElement("div",
-    {id:"parent", xyz:"abc"}, 
-    React.createElement("div", 
-        {id:"child"}, 
-        [React.createElement("h1",{},"This is H1"), React.createElement("h2",{},"This is H2")]
-    )
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const heading = React.createElement(
+  "div",
+  {},
+  React.createElement(
+    "h1",
+    { id: "heading" },
+    "Hey there Harsh Chandwani this side",
+  ),
 );
-
-
-const heading = React.createElement("h1", {id:"heading", xyz:"abc"}, "Hey there from Reactjs")
-//createElement(tag, object, innerHTML)
-
-
-// heading is an Object, we are creating an element at the end of the day 
+const jsxHeading = <h1 className="harsh" id="hye">Hello World from JSX</h1>
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+root.render(jsxHeading);

@@ -10,7 +10,12 @@ const heading = React.createElement(
     "Hey there Harsh Chandwani this side",
   ),
 );
+
 const jsxHeading = <h1 className="harsh" id="hye">Hello World from JSX</h1>
+
+const HeadingComponent = () => {
+  return <h1>Hello world from React Functional Component</h1>
+};
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading);
+root.render(<HeadingComponent />);
